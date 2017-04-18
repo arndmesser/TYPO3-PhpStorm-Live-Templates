@@ -14,3 +14,9 @@ WIP: This Project is not finished yet.
 ### TYPO3
 
 * `tcaCheck` This type creates checkbox(es).
+* `tcaInputDate` This type creates an date field, config taken from 'date'
+* `tcaInputDateTime` This type creates an datetime field, config taken from 'starttime
+* `tcaInputHeader` This type creates an <input> field, config taken from 'header'
+* `tcaInputLink` This type creates an link field, config taken from 'header_link'
+* `tcaRadio` This type creates radio elements
+* `tcaSelectSingle` This type creates a selector box
