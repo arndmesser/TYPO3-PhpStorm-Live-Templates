@@ -1,0 +1,66 @@
+<templateSet group="TYPO3">
+  <template name="tcaCheck" value="/**&#10; * This type creates checkbox(es)&#10; * @see https://docs.typo3.org/typo3cms/TCAReference/stable/ColumnsConfig/Type/Check.html&#10; */&#10;'$column_name$' =&gt; [&#10;    'exclude' =&gt; 1&#10;    'label' =&gt; '$label$',&#10;    'config' =&gt; [&#10;        'type' =&gt; 'check',&#10;        'items' =&gt; [&#10;            [ '$item1$', '' ],&#10;            [ '$item2$', '' ],&#10;        ],&#10;        'cols' =&gt; 'inline',&#10;    ],&#10;]," description="This type creates checkbox(es)." toReformat="false" toShortenFQNames="true">
+    <variable name="column_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="item1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="item2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
+  <template name="tcaInputHeader" value="/**&#10; * This type creates an &lt;input&gt; field, config taken from 'header'.&#10; * @see https://docs.typo3.org/typo3cms/TCAReference/stable/ColumnsConfig/Type/Input.html&#10; */&#10;'$column_name$' =&gt; [&#10;    'exclude' =&gt; true,&#10;    'l10n_mode' =&gt; 'prefixLangTitle',&#10;    'label' =&gt; '$label$',&#10;    'config' =&gt; $GLOBALS['TCA']['tt_content']['columns']['header']['config'],&#10;]," description="This type creates an &lt;input&gt; field, config taken from 'header'" toReformat="false" toShortenFQNames="true">
+    <variable name="column_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
+  <template name="tcaInputDate" value="/**&#10; * This type creates an &lt;input&gt; field, config taken from 'date'.&#10; * @see https://docs.typo3.org/typo3cms/TCAReference/stable/ColumnsConfig/Type/Input.html&#10; */&#10;'$column_name$' =&gt; [&#10;    'exclude' =&gt; true,&#10;    'label' =&gt; '$label$',&#10;    'config' =&gt; $GLOBALS['TCA']['tt_content']['columns']['date']['config'],&#10;]," description="This type creates an date field, config taken from 'date'" toReformat="false" toShortenFQNames="true">
+    <variable name="column_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
+  <template name="tcaInputDateTime" value="/**&#10; * This type creates an &lt;input&gt; field, config taken from 'starttime'.&#10; * @see https://docs.typo3.org/typo3cms/TCAReference/stable/ColumnsConfig/Type/Input.html&#10; */&#10;'$column_name$' =&gt; [&#10;    'exclude' =&gt; true,&#10;    'label' =&gt; '$label$',&#10;    'config' =&gt; $GLOBALS['TCA']['tt_content']['columns']['starttime']['config'],&#10;]," description="This type creates an datetime field, config taken from 'starttime'" toReformat="false" toShortenFQNames="true">
+    <variable name="column_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
+  <template name="tcaInputLink" value="/**&#10; * This type creates an &lt;input&gt; field, config taken from 'header_link'.&#10; * @see https://docs.typo3.org/typo3cms/TCAReference/stable/ColumnsConfig/Type/Input.html&#10; */&#10;'$column_name$' =&gt; [&#10;    'exclude' =&gt; true,&#10;    'label' =&gt; '$label$',&#10;    'config' =&gt; $GLOBALS['TCA']['tt_content']['columns']['header_link']['config'],&#10;]," description="This type creates an link field, config taken from 'header_link'" toReformat="false" toShortenFQNames="true">
+    <variable name="column_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
+  <template name="tcaRadio" value="/**&#10; * This type creates a set of radio elements&#10; * @see https://docs.typo3.org/typo3cms/TCAReference/stable/ColumnsConfig/Type/Radio.html&#10; */&#10;'$column_name$' =&gt; [&#10;    'exclude' =&gt; 1&#10;    'label' =&gt; '$label$',&#10;    'config' =&gt; [&#10;        'type' =&gt; 'radio',&#10;        'items' =&gt; [&#10;            [ '$item1$', 1 ],&#10;            [ '$item2$', 2 ],&#10;            [ '$item3$', 3 ],&#10;        ],&#10;    ],&#10;]," description="This type creates radio elements." toReformat="false" toShortenFQNames="true">
+    <variable name="column_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="item1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="item2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="item3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
+  <template name="tcaSelectSingle" value="/**&#10; * This type creates a selector box&#10; * @see https://docs.typo3.org/typo3cms/TCAReference/stable/ColumnsConfig/Type/Select.html&#10; */&#10;'$column_name$' =&gt; [&#10;    'exclude' =&gt; 1&#10;    'label' =&gt; '$label$',&#10;    'config' =&gt; [&#10;        'type' =&gt; 'selectSingle',&#10;        'default' =&gt; 0&#10;        'items' =&gt; [&#10;            [ '$item1$', 0 ],&#10;            [ '$item1$', 1 ],&#10;            [ '$item2$', 2 ],&#10;            [ 'a divider', '--div--' ],&#10;            [ '$item3$', 3 ],&#10;        ],&#10;    ],&#10;]," description="This type creates a selector box" toReformat="false" toShortenFQNames="true">
+    <variable name="column_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="item1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="item2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="item3" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
+</templateSet>
