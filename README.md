@@ -20,3 +20,5 @@ WIP: This Project is not finished yet.
 * `tcaInputLink` This type creates an link field, config taken from 'header_link'
 * `tcaRadio` This type creates radio elements
 * `tcaSelectSingle` This type creates a selector box
+* `tcaText` This type creates a multi line text input field
+* `tcaTextRte` This type creates a multi line text input field with RTE

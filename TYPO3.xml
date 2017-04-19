@@ -63,4 +63,20 @@
       <option name="PHP Comment" value="false" />
     </context>
   </template>
+  <template name="tcaText" value="/**&#10; * This type creates a multi line text input field&#10; * @see https://docs.typo3.org/typo3cms/TCAReference/8-dev/ColumnsConfig/Type/Text.html&#10; */&#10;'$column_name$' =&gt; [&#10;    'exclude' =&gt; 1,&#10;    'l10n_mode' =&gt; 'prefixLangTitle',&#10;    'label' =&gt; '$label$',&#10;    'config' =&gt; [&#10;        'type' =&gt; 'text',&#10;        'cols' =&gt; 40,&#10;        'rows' =&gt; 15,&#10;    ],&#10;]," description="This type creates a multi line text input field" toReformat="false" toShortenFQNames="true">
+    <variable name="column_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
+  <template name="tcaTextRte" value="/**&#10; * This type creates a multi line text input field with RTE&#10; * @see https://docs.typo3.org/typo3cms/TCAReference/8-dev/ColumnsConfig/Type/Text.html&#10; */&#10;'$column_name$' =&gt; [&#10;    'exclude' =&gt; 1,&#10;    'l10n_mode' =&gt; 'prefixLangTitle',&#10;    'label' =&gt; '$label$',&#10;    'config' =&gt; [&#10;        'type' =&gt; 'text',&#10;        'cols' =&gt; 80,&#10;        'rows' =&gt; 15,&#10;        'enableRichtext' =&gt; true,&#10;        'richtextConfiguration' =&gt; 'default'&#10;    ],&#10;]," description="This type creates a multi line text input field with RTE" toReformat="false" toShortenFQNames="true">
+    <variable name="column_name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+      <option name="PHP Comment" value="false" />
+    </context>
+  </template>
 </templateSet>
